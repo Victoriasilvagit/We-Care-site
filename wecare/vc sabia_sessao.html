@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="shortcut icon" href="imagens/frô.png"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+		.header {
+			width: 100%;
+			background-color: #56CBf9;
+			display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+
+		}
+
+		.logo-imagem {
+			width: 60px;
+			height: 60px;
+
+		}
+
+		.container-logo {
+			display: flex;
+			align-items: baseline;
+		}
+
+		.menu li{
+			display: inline-block;
+			
+		}
+
+		.menu li a{
+			font-size: 20px;
+			font-family: 'Josefin Sans', sans-serif;
+			text-decoration: none;
+			color: black;
+			padding: 10px 15px; 
+		}
+
+		.menu li a:hover{
+			color: #D81159;
+		}
+
+		@font-face {
+			font-family: coolveticarg;
+			src: url(coolveticarg.ttf);
+		}
+
+		#titulo1 {
+			position: absolute;
+			font-family: coolveticarg;
+			font-size: 60px;
+			top: 170px;
+			left: 560px;
+	
+		}
+
+		@font-face {
+			font-family: Balimoon-Regular;
+			src: url(Balimoon-Regular.otf);
+		}
+
+
+		.titulo2 {
+			position: absolute;
+			font-family: Balimoon-Regular;
+			font-size: 200px; 
+			top: 120px;
+			left: 470px;
+			
+		}
+
+		#texto {
+			margin-left: 80px;
+			margin-right: 80px;
+			width: 630px;
+			height: 1230px;
+			font-family: 'Josefin Sans' sans-serif ;
+			font-size: 20px;
+		}
+		h1{
+			font-family: coolveticarg;
+		}
+
+		#row {
+		      width: 250px;
+		      margin-top: 100px;
+		    }
+
+
+	    .bloquin {
+	     
+	      width: 250px;
+	      height: 150px;
+	      margin-top: 60px;
+	    }
+
+	    #pfv {
+	    	width: 400px;
+			margin-left: 280px;
+			margin-top: -1070px;
+			font-family: coolveticarg;
+			font-size: 25px;
+			font-weight: bold;
+
+		}
+
+		.bloquin2 {
+	      width: 350px;
+	      height: 150px;
+	      margin-top: 60px;
+	    }
+
+	    .tex {
+			font-size: 15px;
+			font-weight: normal;
+		}
+
+
+		a.infot,link a.infot:visited {
+			text-decoration: none;
+			color: black;
+			
+		}
+
+
+		#Copyright {
+			text-align: center;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+		.rodape {
+			background-color: #56CBF9; 
+			height: 60px;
+		}
+  </style>
+	<title>Você Sabia ?</title>
+
+</head>
+<body>
+     <header class="header">
+         <div class="container-logo"> 
+             <div class="logo-imagem">
+               <a href="index.php">
+                 <img src="imagens/logo.png" alt="logo we care">
+                 </a>
+             </div>
+
+
+         </div>
+
+         <div class="menu">
+               <ul>
+                   <li><a href="doacoes_sessao.html">Faça parte</a></li>
+                   <li><a href="patrocine_sessao.html">Patrocine</a></li>
+                   <li><a href="vc sabia_sessao.html">Você Sabia?</a></li>
+                   <li><a href="Sobrenos_sessao.html">Sobre Nós</a></li>
+               </ul>
+         </div>
+     </header>
+
+     <div>
+     	<img src="imagens/vcsabia.png" width="100%"/>
+     </div>
+
+      <div class="titulo2">
+          Você Sabia?
+        </div>
+     <br><br>
+
+     
+     <article id="texto">
+     	  <h2>Notícias e Artigos: </h2><br>
+
+       <div id="row">
+         <a href="Saúde Menstrual.html">
+          <img src="imagens/1.png" alt="Importância" class="bloquin" >
+         </a>
+         <a href="Tabus.html">
+          <img src="imagens/4.png" alt="Tabus" class="bloquin">
+        </a>
+        <a href="Atrasou, e agora.html">
+          <img src="imagens/5.png" alt="Atrasou" class="bloquin">
+        </a>
+        <a href="mapa.html">
+          <img src="imagens/3.png" alt="Mapa" class="bloquin">
+        </a>
+        <a href="educaçãosexual.html">
+          <img src="imagens/2.png" alt="Educação" class="bloquin">
+        </a>
+
+      </div>
+      <br>
+
+       <div id="pfv">
+
+        <div class="bloquin2"><a href="Saúde Menstrual.html" class="infot">Saúde Menstrual: Importância</a>
+          <div class="tex">
+            Entenda um pouco mais sobre o quão importante é ter uma saúde boa, pricipalmente em relação ás menstruações.
+          </div>
+        </div>
+
+
+        <div class="bloquin2"><a href="Tabus.html" class="infot">Tabus da Menstruação</a>
+          <div class="tex">
+            Sabemos que a menstruação continua sendo um tabu para muitos, portanto, entenda como deixar esse pensamento retrográdo de lado.
+          </div>
+        </div>
+
+        <div class="bloquin2"><a href="Atrasou, e agora.html" class="infot">Atrasou, e agora?</a>
+          <div class="tex">
+            Gravidez? Estresse? Saiba os diferentes motivos que fazem atrasar sua menstruação.
+          </div>
+        </div>
+
+        <div class="bloquin2"><a href="mapa.html" class="infot">Mapa Genital feminino(+12)</a>
+          <div class="tex">
+            Descubra onde fica cada parte em seu aparelho reprodutor.
+          </div>
+        </div>
+
+        <div class="bloquin2"><a href="educaçãosexual.html" class="infot">Educação Sexual(+16)</a>
+          <div class="tex">
+            Não sabe como se portar durante aquele momento ? Essa matéria explicará como.
+          </div>
+        </div>
+        
+         
+       </div>
+
+     </article>
+     <br> <br>
+     
+    <footer class="rodape">
+      <div id="Copyright">
+        Made by Universe Design &copy; 2021
+      </div>
+     </footer>
+   
+  
+
+     
+</body>
+</html>
