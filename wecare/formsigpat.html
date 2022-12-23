@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastre-se</title>
+  <link rel="shortcut icon" href="imagens/frô.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+<style> 
+
+  html {
+    overflow-y: scroll;
+  }
+  @font-face {
+    font-family: coolveticarg;
+    src: url(coolveticarg.ttf);
+  }
+
+  body {
+    background: white;
+    font-family:  coolveticarg;
+    box-sizing: border-box;
+  }
+
+
+  .form {
+    background: #56CBF9;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  h4 {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    margin: 0 0 40px;
+  }
+
+
+  label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color:  gray;
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 20px;
+  }
+
+  label .req {
+    margin: 2px;
+    color: #D81159;
+  }
+
+  label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+  }
+  label.active .req {
+    opacity: 0;
+  }
+
+
+  input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: white;
+    background-image: none;
+    border: 1px solid white;
+    color: black;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+  }
+  input:focus, textarea:focus {
+    outline: 0;
+    border-color: #D81159;
+  }
+
+  textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+  }
+
+  .field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
+
+  .button {
+    border: 0;
+    outline: none;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin-left: 300px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: .1em;
+    background: #D81159;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  }
+
+  .button:hover, .button:focus {
+    background: #FF729F;
+  }
+
+  .button-block {
+    display: block;
+    width: 250px;
+  }
+
+  .back {
+    margin-top: -20px;
+    text-align: left;
+    
+  }
+</style>
+</head>
+<body>
+<form method="POST" action="dados1.php">
+
+<div class="form">
+   
+
+   <img src="imagens/logo.png" alt="logo">
+
+  <div class="tab-content">
+    <div id="signup">   
+      <h4>Cadastre-se</h4>
+      
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>
+              Nome da Empresa<span class="req">*</span>
+            </label>
+            <input type="text" name= "nomeempresa" required autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              CNPJ<span class="req">*</span>
+            </label>
+            <input type="text" name= "cnpj" required autocomplete="off" />
+          </div>
+        </div>
+    
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>
+              Endereço<span class="req">*</span>
+            </label>
+            <input type="text" name= "endereco" required autocomplete="off" />
+          </div>
+          <div class="field-wrap">
+              <label>
+                CEP<span class="req">*</span>
+              </label>
+              <input type="text" name= "cep" required autocomplete="off" />
+          </div>
+        </div>
+        <div class="top-row">
+          <div class="field-wrap">
+            <label>
+              Cidade<span class="req">*</span>
+            </label>
+            <input type="text" name="cidade" required autocomplete="off" />
+          </div>
+          <div class="field-wrap">
+              <label>
+                Numero<span class="req">*</span>
+              </label>
+              <input type="number" name= "numero" required autocomplete="off" />
+          </div>
+        </div>
+  
+        
+        <div class="top-row">
+        <div class="field-wrap">
+          <label>
+            Celular<span class="req">*</span>
+          </label>
+          <input type="text" name= "celular" required autocomplete="off" />
+        </div>
+    
+        <div class="field-wrap">
+          <label>
+            Telefone<span class="req">*</span>
+          </label>
+          <input type="text" name="telefone" required autocomplete="off"/>
+        </div>
+      </div>
+        
+        <div class="field-wrap">
+          <label>
+            E-mail<span class="req">*</span>
+          </label>
+          <input type="email" name= "email" required autocomplete="off" />
+        </div>
+    
+     
+      
+      <div class="field-wrap">
+        <label>
+          Senha<span class="req">*</span>
+        </label>
+        <input type="password" name="senha" required autocomplete="off"/>
+      </div>
+      
+      <button type="submit" class="button button-block">Cadastrar</button>
+      <p class="back"><a href="formlog.html">Login</a></p>
+      
+      </form>
+
+      
+      
+        
+    
+      
+</div> 
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/script.js"></script>
+
+</body>
+</html>
