@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="shortcut icon" href="imagens/frô.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+		.header {
+			width: 100%;
+			background-color: #56CBf9;
+			display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+
+		}
+
+		.logo-imagem {
+			width: 60px;
+			height: 60px;
+
+		}
+
+		.container-logo {
+			display: flex;
+			align-items: baseline;
+		}
+
+		.menu li{
+			display: inline-block;
+			
+		}
+
+		.menu li a{
+			font-size: 20px;
+			font-family: 'Josefin Sans', sans-serif;
+			text-decoration: none;
+			color: black;
+			padding: 10px 15px; 
+		}
+
+		.menu li a:hover{
+			color: #D81159;
+		}
+
+		/**Banner**/
+
+        img.container {
+         display: flex;
+		 align-items: flex-end;
+        }
+
+		@font-face {
+			font-family: Balimoon-Regular;
+			src: url(Balimoon-Regular.otf);
+		}
+
+
+		.titulo2 {
+			position: absolute;
+			font-family: Balimoon-Regular;
+			font-size: 100px; 
+			top: 190px;
+			left: 560px;
+			
+		}
+ 
+		/**conteudo**/
+
+		.container-texto {
+			height: 1200px;
+		   width: 600px;
+		}
+
+		.texto {
+			margin-left: 50px;
+			font-family: 'Jost', sans-serif;
+			font-size: 1.5vw;
+		
+		}
+
+		.container {
+			margin-top:-220px ;
+			margin-left: 700px ;
+			width: 600px; 
+			height:500px;
+	
+		}
+	
+		
+
+
+		/**Seção depoimentos**/
+    
+		.displayed {
+			margin-top:-100px ;
+			margin-left: 200px ;
+	
+		 }
+	
+                
+
+        /**Rodapé**/
+
+        #Copyright {
+			text-align: center;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+		.rodape {
+			background-color: #56CBF9; 
+			height: 60px;
+		}
+		.call{
+			background-image: url(imagens/rodapénos.jpg);
+		}
+	
+    </style>
+    <title>Sobre Nós?</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-logo"> 
+            <div class="logo-imagem">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="logo we care">
+                </a>     
+            </div>
+
+
+        </div>
+
+       <nav> 
+        <ul class="menu">
+            <li><a href="doacoes_sessao.html">Faça parte</a></li>
+            <li><a href="patrocine_sessao.html">Patrocine</a></li>
+            <li><a href="vc sabia_sessao.html">Você Sabia?</a></li>
+            <li><a href="Sobrenos_sessao.html">Sobre Nós</a></li>
+        </ul> 
+       </nav>
+            
+    </header>
+
+    <div>
+        <img src="imagens/sobre.png" width="100%"/>
+    </div>
+
+     <div class="titulo2">
+         Sobre Nós
+       </div>
+    <br><br>
+    <br><br>
+
+    <article class="container-texto">
+     <div class="texto">
+        Somos um grupo de alunos, que ao perceber  
+        os problemas com a higiene brasileira, principalmente entre 
+        mulheres e pessoas da comunidade LGBT de baixa renda, afastados 
+        de casa por preconceito ou desempregados, nos comovemos e 
+        decidimos iniciar o projeto do site com incentivo de nossos professores, hoje 
+        juntos com nosso patrocinadores e a sua participação planejamos ajudar essas pessoas e mudar o mundo. 
+     </div>
+
+        <div class="container"><img src="imagens/wecare.jpg"  alt="wecare" width="100%"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="displayed" src="imagens/nos.png" alt="nossa fala" width="950px"  >
+
+    </article>
+
+
+
+
+    <footer class="rodape">
+        <div id="Copyright">
+          Made by Universe Design &copy; 2021
+        </div>
+       </footer>
+  
+</body>
+</html>
