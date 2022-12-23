@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="shortcut icon" href="imagens/frô.png"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+		.header {
+			width: 100%;
+			background-color: #56CBf9;
+			display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+
+		}
+
+		.logo-imagem {
+			width: 60px;
+			height: 60px;
+
+		}
+
+		.container-logo {
+			display: flex;
+			align-items: baseline;
+		}
+
+		.menu li{
+			display: inline-block;
+			
+		}
+
+		.menu li a{
+			font-size: 20px;
+			font-family: 'Josefin Sans', sans-serif;
+			text-decoration: none;
+			color: black;
+			padding: 10px 15px; 
+		}
+
+		.menu li a:hover{
+			color: #D81159;
+		}
+
+		@font-face {
+			font-family: coolveticarg;
+			src: url(coolveticarg.ttf);
+		}
+
+		@font-face {
+			font-family: Balimoon-Regular;
+			src: url(Balimoon-Regular.otf);
+		}
+
+		#botao {
+			margin-top: -200px;
+			margin-left: 500px;
+
+		}
+
+		button {
+			border-style: none;
+			border-radius: 12px;
+			width: 400px;
+			height: 60px;
+			color: white;
+			font-family: coolveticarg;
+			font-size: 30px; 
+			background-color: #D81159;
+			transition: 0.3s;
+			
+
+		}
+
+		button:hover {
+			background-color: #FF729F;
+		}
+
+		#bo {
+			border: 0;
+			outline: none;
+			border-radius: 100px;
+			padding: 10px 0;
+			font-size: 1rem;
+			font-weight: 600;
+			font-family: 'Josefin Sans', sans-serif;
+			text-transform: capitalize;
+			letter-spacing: .1em;
+			background: #D81159;
+			color: #ffffff;
+			transition: all 0.5s ease;
+			-webkit-appearance: none;
+
+		}
+
+		#bo{
+			width: 200px;
+			height: 50px;
+		}
+
+		#bo:hover {
+			background-color: #FF729F;
+		}
+
+		#texto {
+			margin-left: 80px;
+			margin-right: 80px;
+			width: 500px;
+			height: 2300px;
+			font-family: coolveticarg;
+			font-size: 25px;
+
+		}
+
+        #row {
+		      width: 250px;
+		      margin-top: 20px;
+		}
+
+
+	    .bloquin {
+	      background-color: lightgray;
+	      width: 150px;
+	      height: 150px;
+	      margin-top: 140px;
+	    }
+
+	    #pfv {
+	    	width: 400px;
+			margin-left: 280px;
+			margin-top: -1070px;
+			font-family: coolveticarg;
+			font-size: 25px;
+			font-weight: bold;
+
+		}
+
+		.bloquin2 {
+	      width: 250px;
+	      height: 5px;
+	      margin-top: 315px;
+	    }
+
+	    .tex {
+			font-size: 15px;
+			font-weight: normal;
+		}
+
+
+
+		h2{
+			font-family: coolveticarg;
+		}
+
+		.doac {
+			font-family: coolveticarg;
+			margin-top: 5px;
+			margin-left: 608px;
+
+		}
+
+
+		.doad {
+			font-family: coolveticarg;
+			margin-top: -10px;
+			margin-left: 92px; 
+
+		}
+
+
+		.phelp {
+			width: 200px;
+			font-family: coolveticarg;
+			margin-top: 1px;
+			margin-left: 1020px;
+
+		}
+
+
+		#lista {
+			margin-left: 40px;
+		}
+
+		#imd {
+			width: 450px;
+			height: 460px;
+			margin-top: -290px;
+			margin-left: 800px;
+
+		}
+
+		#lol {
+			width: 800px;
+			text-align: center;
+			font-family: coolveticarg;
+			font-weight: bold;
+			font-size: 30px;
+			margin-left: 250px; 
+		}
+
+		#mapa {
+			background-color: lightgray;
+			width: 1260px;
+			height: 400px;
+		}
+
+		.form {
+			box-sizing: border-box;
+			background: #D6D6D6;
+			padding: 40px;
+			max-width: 90%;
+			margin: 40px auto;
+			border-radius: 4px;
+		  
+		  }
+	  
+		  h4 {
+			color: black;
+			font-weight: 900;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 30px;
+		  }
+	  
+		  label {
+			position: absolute;
+			transform: translateY(6px);
+			left: 13px;
+			color:  gray;
+			transition: all 0.25s ease;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			pointer-events: none;
+			font-size: 20px;
+		  }
+	  
+		  label .req {
+			margin: 2px;
+			color: gray;
+		  }
+	  
+		  label.active {
+			transform: translateY(50px);
+			left: 2px;
+			font-size: 14px;
+		  }
+		  label.active .req {
+			opacity: 0;
+		  }
+	  
+	  
+		  input, textarea {
+			font-size: 22px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 5px 10px;
+			background: white;
+			background-image: none;
+			border: 1px solid white;
+			color: black;
+			border-radius: 0;
+			transition: border-color .25s ease, box-shadow .25s ease;
+		  }
+		  input:focus, textarea:focus {
+			outline: 0;
+			border-color: #D81159;
+		  }
+			textarea {
+			resize: vertical;
+		  }
+	  
+		  .field-wrap {
+			position: relative;
+			margin-bottom: 40px;
+		  }
+	  
+		  .top-row:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+		  .top-row > div {
+			float: left;
+			width: 48%;
+			margin-right: 4%;
+		  }
+		  .top-row > div:last-child {
+			margin: 0;
+		  }
+
+		
+
+
+		#Copyright {
+			text-align: center;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+		.rodape {
+			background-color: #56CBF9; 
+			height: 60px;
+		}
+   </style>	
+
+	<title>Doação</title>
+
+</head>
+<body>
+     <header class="header">
+         <div class="container-logo"> 
+             <div class="logo-imagem">
+                 <a href="Home.php">
+                 <img src="imagens/logo.png" alt="logo we care">
+                </a>
+             </div>
+             </div>
+
+
+         </div>
+
+         <div class="menu">
+               <ul>
+                   <li><a href="patrocine.html">Patrocine</a></li>
+                   <li><a href="vc sabia.html">Você Sabia?</a></li>
+                   <li><a href="Sobrenos.html">Sobre Nós</a></li>
+               </ul>
+         </div>
+     </header>
+
+     <div>
+     	<img src="imagens/delivery.png" width="100%"/>
+     </div>
+     <div id="botao">
+        <a href="imagens/Ops.png">
+          <button type="submit"> Doe Agora! </button>
+        </a>
+    </div>
+     <br><br>
+
+     
+     <article id="texto">
+
+        <div id="rows">
+
+            <div class="bloquin"><img src="imagens/idoa.png" width="150px" height="150px"></div>
+            <div class="bloquin"><img src="imagens/idoador.png" width="150px" height="150px"></div>
+            <div class="bloquin"><img src="imagens/ipessoa.png" width="150px" height="150px"></div>
+           
+    
+          </div>
+          <br>
+    
+           <div id="pfv">
+    
+                <div class="bloquin2"><p>Doação</p>
+                <div class="tex">
+                    A doação é um ato nobre de empatia.
+                </div>
+                </div>
+        
+        
+                <div class="bloquin2"><p>Doadores</p>
+                <div class="tex">
+                    Os doadores são a base do projeto.
+                </div>
+                </div>
+        
+                <div class="bloquin2"><p>Pessoas ajudadas</p>
+                <div class="tex">
+                    Diversas pesssoas podem ser ajudadas no projeto.
+                </div>
+                </div>
+
+            </div>
+     	
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+
+      <h2> O que doar?</h2><br>
+
+      <div id="lista">
+        <ul>
+         <li>Absorventes Reutilizáveis.</li>
+         <li>Absorventes Descartaveis</li>
+         <li>Calcinhas Absorventes</li>
+         <li>Coletor menstrual</li>
+         <li>Lenços humidecidos</li>
+         <li>Porta Absorvente</li>
+       </ul>
+      </div><br>
+
+      <div id="imd">
+        <img src="imagens/oqdoar.jpg" width="100%" height="100%">
+      </div>
+      <br><br><br><br>
+
+      <div id="lol">Local para entregar e receber doações</div>
+      <br>
+
+      <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.723156645295!2d-46.74887268502726!3d-23.289506984818605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee6d2c047d017%3A0x32f661385dff2f49!2sEtec%20de%20Francisco%20Morato!5e0!3m2!1spt-BR!2sbr!4v1634516327224!5m2!1spt-BR!2sbr" width="1260" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+     </article>
+
+	 <div class="form">
+		<h4>Deixe um Comentário</h4>
+		<form  method="POST"  action="php/coment.php">
+	 
+		 <div class="field-wrap">
+		   <label>
+			 Comentário<span class="req">*</span>
+		   </label>
+		   <textarea name="comentario" id="coment" cols="10" rows="5"></textarea>
+		 </div>
+  
+		 <div class="top-row">
+		  <div class="field-wrap">
+			<label>
+			  Nome<span class="req">*</span>
+			</label>
+			<input type="text" name="Nome" required autocomplete="off"/>
+		  </div>
+	 
+		  <div class="field-wrap">
+		   <label>
+			 Email<span class="req">*</span>
+		   </label>
+		   <input type="text" name="Email" required autocomplete="off"/>
+		  </div>
+		 </div>
+		 <button type="submit" id="bo">Enviar</button>
+		</form>
+	  </div>
+	  
+
+	 
+
+     
+
+     <footer class="rodape">
+      <div id="Copyright">
+        Made by Universe Design &copy; 2021
+      </div>
+     </footer>
+
+     
+	 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/script.js"></script>
+
+
+     
+</body>
+</html>
